@@ -20,6 +20,11 @@ WHERE OrderID = '10251'
 ORDER BY ProductName
 
 ### Display the OrderID, CustomerName and the employee's LastName for every order. All columns should be labeled clearly. Displays 196 records.
+SELECT OrderID, CustomerName, LastName FROM [Orders] as O
+JOIN Customers as C
+on O.CustomerID = C.CustomerID
+JOIN Employees as E
+on O.EmployeeID = E.EmployeeID
 
 ### (Stretch)  Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
 
