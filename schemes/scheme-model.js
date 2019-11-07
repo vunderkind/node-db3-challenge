@@ -1,4 +1,4 @@
-const db = require('../data/seeds/01-schemes');
+const db = require('../data/dbConfig');
 
 module.exports = {
     find
